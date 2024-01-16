@@ -7,6 +7,7 @@ app.post("/webhook", (req, res) => {
   console.log("Webhook Data:", req.body);
   console.log("Answers :", req.body.answers);
   console.log("form_response :", req.body.form_response);
+  console.log("hidden field :", req.body.form_response.hidden);
   res.status(200).send("Data received");
 });
 
