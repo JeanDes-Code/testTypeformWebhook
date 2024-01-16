@@ -5,7 +5,8 @@ app.use(express.json());
 
 app.post("/webhook", (req, res) => {
   console.log("Webhook Data:", req.body);
-  console.log("response fields email:", req.body.response_fields.email);
+  console.log("Answers :", req.body.answers);
+  console.log("form_response :", req.body.form_response);
   res.status(200).send("Data received");
 });
 
